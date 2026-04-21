@@ -50,6 +50,16 @@ Run unit tests and integration tests
 ====================================
 pytest tests
 
+To Run coverage report
+=====================================
+
+To generate coverage report on screen
+===============
+python -m coverage report -m
+
+TO generate html report
+===============
+python -m coverage html
 
 Folder structure
 =====================================
