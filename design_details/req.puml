@@ -1,0 +1,15 @@
+@startuml
+title Recipe Manager - Request Flow (Create Recipe)
+
+actor Client
+
+Client -> API : POST /recipes
+API -> Service : create(db, payload)
+Service -> DBModel : Recipe(...)
+Service -> DB : session.add(recipe)
+DB -> DB : INSERT INTO recipes
+DB --> Service : committed entity
+Service --> API : created recipe object
+API --> Client : JSON response
+
+@enduml

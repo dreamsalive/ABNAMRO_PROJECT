@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+pytest
+httpx
+snakeviz
+py-spy
+pytest-cov
+black
+isort
+greenlet
+coverage
+flameprof
+plantuml

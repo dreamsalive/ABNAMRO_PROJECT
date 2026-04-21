@@ -1,0 +1,24 @@
+@startuml
+title Recipe Manager - Correct 3 Layer Architecture
+
+actor Client
+
+package "API Layer" {
+  [recipes.py]
+}
+
+package "Service Layer" {
+  [RecipeService]
+}
+
+package "DB Layer" {
+  [database.py]
+  [Recipe Model]
+}
+
+Client --> [recipes.py]
+[recipes.py] --> [RecipeService]
+[RecipeService] --> [Recipe Model]
+[RecipeService] --> [database.py]
+[database.py] --> SQLite
+@enduml

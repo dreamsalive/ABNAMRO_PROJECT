@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+venv/
+
+# Database
+*.db
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+
+# OS
+.DS_Store
